@@ -1,0 +1,227 @@
+/* ------------
+Common Styles
+-------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    background: #F3F1FF;
+    padding-bottom: 100px;
+}
+/*-------------- 
+  Navigation
+-------------- */
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 94px;
+    left: 0px;
+    top: 0px;
+    background: #562EFF;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40.42px;
+    height: 51px;
+}
+.logo p{
+    font-size: 24px;
+    margin-left: 15.5px;
+    color: #FFFFFF;
+}
+.nav-detail{
+    display: flex;
+    align-items: center;
+}
+.nav-detail ul{
+    display: flex;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+a{
+    margin-right: 36px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.nav-detail img{
+    height: 51px;
+    width: 51px;
+}
+/*------------
+ top player
+------------ */
+.top-player-blog{
+    width: 930px;
+    margin-top: 34px;
+    margin-left: 285px;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+}
+.top-player-container{
+   padding-top: 33px;
+    margin-left: 33px;
+}
+.top-payer-heading{
+    margin-bottom: 40px;
+    color: #562EFF;
+}
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 29px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    height: 56px;
+    width: 56px;
+    margin-right: 18px;
+}
+.player-name{
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+    transition: .4s;
+}
+.player-name:hover{
+    transform: translateX(3px) scale(1.2);
+}
+hr{
+    margin: 30px 33px 33px 30px;
+    border: 1px solid #D1D1D1;
+}
+/* ------------
+    top blog
+----------- */
+.top-blog-container{
+    margin-left: 30px;
+}
+.top-blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.blog{
+    display: flex;
+    align-items: center;
+}
+.blog-banner img{
+    width: 177px;
+    height: 117px;
+    margin-right: 16px;
+}
+.blog-holder{
+    text-decoration: none;
+    color: #562EFF;
+}
+/*-----------
+ Latest Courses
+ ------------ */
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23.5px;
+    margin-right: 30px;
+    padding-bottom: 30px;
+}
+.cours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px rgba(95, 78, 78, 0.274);
+}
+.course-holder{
+    color: #ED6B4F;
+}
+.star{
+    padding-right: 30px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+    margin-right: 11px;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.time p{
+    background-color: #ff4a5f56;
+    padding: 3px 5px 5px 3px;
+    border-radius: 20px;
+    color: red;
+    word-spacing: 4px;
+}
+
+/* -----------
+Media-Query
+------------- */
+@media only screen and (max-width: 688px)  {
+    main{
+        width: 100%;
+    }
+    .top-player-blog{
+        width: 688px;;
+        margin-left: 0;
+        margin-left: 40px;
+    }
+    .top-players, .top-blogs, .courses{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 60px;
+    }
+    .cours, .blog{
+        margin-bottom: 30px;
+    }
+    .player{
+        transition: 1s;
+    }
+    .player:hover{
+       transform: scale(1.5);
+    }
+}
+@media only screen and (min-width: 688px) and (max-width: 1000px) {
+    main{
+        width: 100%;
+    }
+    .top-player-blog{
+        width: 688px;;
+        margin-left: 0;
+        margin-left: 80px;
+    }
+    .top-players, .top-blogs, .courses{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 60px;
+    }
+    .cours, .blog{
+        margin-bottom: 30px;
+    }
+    .player{
+        transition: 1s;
+    }
+    .player:hover{
+       transform: scale(1.5);
+    }
+}
